@@ -1,1 +1,1 @@
-# coh-match-generator
+# Company of heroes match generator
