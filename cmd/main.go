@@ -18,15 +18,16 @@ func generateMatch() MatchInfo {
 	allies := ""
 	axis := ""
 
-	if rand.Intn(2) == 0 {
+	if rand.Intn(100)%2 == 0 {
 		allies = p1
 		axis = p2
 	} else {
 		allies = p2
 		axis = p1
 	}
-	alliesFaction := AlliesFactions[rand.Intn(len(AlliesFactions))]
-	axisFaction := AxisFactions[rand.Intn(len(AxisFactions))]
+
+	alliesFaction := AlliesFactions[rand.Intn(len(AlliesFactions)*10)%len(AlliesFactions)]
+	axisFaction := AxisFactions[rand.Intn(len(AxisFactions)*10)%len(AxisFactions)]
 
 	axisOutput := MatchItem{
 		Player:   axis,

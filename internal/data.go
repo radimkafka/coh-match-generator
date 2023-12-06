@@ -71,5 +71,5 @@ var Wehrmacht = Fraction{
 	Doctrines: []string{"Defensive Doctrine", "Blitzkrieg Doctrine", "Terror Doctrine"},
 }
 
-var AlliesFactions = []Fraction{Americans}
+var AlliesFactions = []Fraction{Americans, British}
 var AxisFactions = []Fraction{Wehrmacht, PanzerElite}
